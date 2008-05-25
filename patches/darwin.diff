@@ -1,0 +1,18 @@
+diff -ur a/setup.py b/setup.py
+--- a/setup.py	2008-05-26 00:51:23.000000000 +0200
++++ b/setup.py	2008-05-26 00:51:53.000000000 +0200
+@@ -32,11 +32,11 @@
+ cmemcache = Extension(
+     "_cmemcache",
+     sources,
+-    include_dirs = ['/usr/local/include'],
++    include_dirs = [],
+     extra_compile_args = ['-Wall'],
+     libraries=['memcache'],
+-    library_dirs=['/usr/local/lib'],
+-    extra_link_args=['--no-undefined', '-Wl,-rpath=/usr/local/lib'],
++    library_dirs=[],
++    extra_link_args=['--no-undefined'],
+     define_macros=define,
+     undef_macros=undefine)
+ 
